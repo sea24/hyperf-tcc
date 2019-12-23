@@ -7,19 +7,20 @@ use PhpDocReader\AnnotationException;
 use ReflectionException;
 use Swoft\Rpc\Client\Annotation\Mapping\Reference;
 use Swoft\Rpc\Client\Route;
-use MeiQuick\Rpc\Tcc\Annotation\Mapping\Compensable;
-use MeiQuick\Rpc\Tcc\Route\RouteRegister;
+use MeiQuick\Swoft\Tcc\Annotation\Mapping\Compensable;
+use MeiQuick\Swoft\Tcc\Route\RouteRegister;
 use Swoft\Annotation\Annotation\Mapping\AnnotationParser;
 use Swoft\Annotation\Annotation\Parser\Parser;
 use Swoft\Bean\Annotation\Mapping\Bean;
 use Swoft\Proxy\Exception\ProxyException;
 use Swoft\Rpc\Client\Annotation\Mapping\Fallback;
 use Swoft\Rpc\Client\Exception\RpcClientException;
+use MeiQuick\Swoft\Tcc\Annotation\Mapping\MeiQuickTcc;
 
 /**
  * @since 2.0
  *
- * @AnnotationParser(Compensable::class)
+ * @AnnotationParser(MeiQuickTcc::class)
  */
 class CompensableParser extends Parser
 {

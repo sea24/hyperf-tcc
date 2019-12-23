@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
 namespace MeiQuick\Swoft\Tcc\Annotation\Mapping;
+
 use Doctrine\Common\Annotations\Annotation\Attribute;
 use Doctrine\Common\Annotations\Annotation\Attributes;
 use Doctrine\Common\Annotations\Annotation\Required;
@@ -21,7 +22,8 @@ use Swoft\Rpc\Protocol;
 class MeiQuickTcc
 {
 
-    protected  $tccService;
+    protected $tccService;
+
     /**
      * Reference constructor.
      *
@@ -34,6 +36,7 @@ class MeiQuickTcc
             $this->tccService = $values;
         }
     }
+
     /**
      * @return string
      */

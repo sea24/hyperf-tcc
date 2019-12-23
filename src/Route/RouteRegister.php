@@ -55,9 +55,10 @@ class RouteRegister
      */
     public static function register($service): void
     {
+        echo 66666;
         $interfaceInfo = ReferenceRegister::getAllTcc();
 
-        //var_dump("-----------------------------",$interfaceInfo,"----------------------------");
+        var_dump("-----------------------------",$interfaceInfo,"----------------------------");
 
         //找到所有的,注册类型为TCC的接口服务,然后替换一下interface的名称,
         foreach ($interfaceInfo as $k => $v) {
