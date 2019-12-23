@@ -1,0 +1,30 @@
+{
+  "name": "meiquick/swoft-tcc",
+  "type": "library",
+  "keywords": [
+    "php",
+    "swoole",
+    "swoft",
+    "rpc"
+  ],
+  "description": "基于Swoft封装TCC分布式事务",
+  "license": "Apache-2.0",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "MeiQuick\\Swoft\\Tcc\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SwoftTest\\Rpc\\Client\\Unit\\": "test/unit"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "scripts": {
+    "test": "php run.php -c phpunit.xml"
+  }
+}
